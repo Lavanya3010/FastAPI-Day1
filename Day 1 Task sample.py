@@ -1,7 +1,7 @@
-#!pip install fastapi
-#!pip install uvicorn
+#!pip install fastapi uvicorn
 from fastapi import FastAPI
-app = FastAPI()
+app=FastAPI()
+
 @app.get("/")
-async def root():
-    return {"message": "Hello Welcome to FastAPI! Day 1 Task"}
+def root():
+    return {"message": "Welcome to Day 1 Task"}
